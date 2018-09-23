@@ -1,0 +1,71 @@
+#LINUXTIPS - GIT
+#BRANCH SUPORTE ROBUSTO A DESENVOLVIMENTO PARALELOS
+
+#CONFIGURAÇÃO DO GIT
+git config --global user.name "alexanfc"
+git config --global user.email "alexanfc@hotmail.com"
+#escolher qual editor padrão do git:
+git config --global core.editor vi
+#verificar o arquivo config do git:
+git config --list
+*****************************************
+
+#INICIAR O RASTREAMENTO - NO DIRETÓRIO ONDE ESTÃO OS ARQUIVOS A SEREM RASTREADOS:
+git init
+#APÓS INICIAR O RASTREAMENTO É CRIADO UM DIRETÓRIO .git NO DIRETÓRIO DOS ARQUIVOS RASTREADOS.
+
+#INICIAR O MONITORAMENTO DO ARQUIVO:
+git add nome_arquivo - git add . - git add *
+
+#EM SEGUIDA COMMITAR O ARQUIVO
+git commit -m "Descrição do Commit"
+#O ARQUIVO FOI ENVIADO AO GIT DIRECTORY.
+
+#REALIZAR O PUSH DO ARQUIVO PARA O REPOSITÓRIO:
+git push origin master
+=====================================================================================================
+
+#CLONAR REPOSITÓRIO:
+git clone https://github.com/alexanfc/helloworld.git
+
+#VERIFICAR A CONDIÇÃO DO REPOSITÓRIO
+git status
+
+#REMOVER UM ARQUIVO DO GIT
+git rm nome_arquivo
+
+#VISUALIZAR AS ALTERAÇÕES NO GIT
+git log - git log -p 
+
+#IGNORAR A ULTIMA ALTERAÇÃO DO ARQUIVO
+git checkout -- nome_arquivo
+
+
+#INFORMAÇÕES DO GITHUB - 23/09:
+
+HTTPS: https://github.com/alexanfc/helloworld.git
+or create a new repository on the command line:
+echo "# helloworld" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/alexanfc/helloworld.git
+git push -u origin master
+
+or push an existing repository from the command line:
+git remote add origin https://github.com/alexanfc/helloworld.git
+git push -u origin master
+====================================================================================================================
+
+SSH: git@github.com:alexanfc/helloworld.git 
+or create a new repository on the command line
+echo "# helloworld" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin git@github.com:alexanfc/helloworld.git
+git push -u origin master
+
+or push an existing repository from the command line
+git remote add origin git@github.com:alexanfc/helloworld.git
+git push -u origin master
